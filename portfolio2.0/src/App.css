@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
   }
+  /*==================================
+            Header Section 
+   ===================================*/
 
   header {
     height: 100vh;
@@ -12,31 +15,114 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-bottom: 2px solid #00FF00
   }
 
 
-#name {
-    background-color: black;
-    color: #00FF00;
-    border: 5px dotted #00FF00;
+.name {
+    background-color: #00ff00be;
+    font-weight: bold;   
     border-radius: 5px;
     font-size: 10px;
     display: absolute;
+    min-width: 444px;
     width: 50%;
     padding: 10px;
-    margin: 50x 50px;
-  
+    margin: 50px 50px;
 }
 pre {
     white-space: pre-wrap;
     word-break: break-all;
   }
   header img {
+    max-height: 35vh;
     max-width: 50vw;
-    border-radius: 50%;
+    margin-top: 50px;
+    border-radius: 100%;
     filter: drop-shadow(8px 8px 10px #00FF00);
   }
   #describe {
       color: #00FF00;
       font-size: 50px;
   }
+
+    /*==================================
+            Nav Section 
+   ===================================*/
+
+  .nav {
+      background-color: #070707;
+      display: flex;
+      border-bottom: 2px solid #00FF00; 
+      justify-content: space-around;
+  }
+
+.nav-link {
+      color: #00FF00;
+  }
+
+  /*==================================
+            about-me Section 
+   ===================================*/
+   #about-me, #skills, #experience, #projects{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #00FF00
+   }
+
+   #projects {
+       height: 100vh;
+   }
+
+   #about-me, #skills, #experience {
+       height: 50vh;
+       background-color: rgb(37, 36, 36);
+       color: #00FF00;
+   }
+
+   #about-me, #skills, #experience p {
+       padding: 5%;
+       font-size: large;
+       justify-content: center;
+   }
+
+
+     /*==================================
+            Skills Section 
+   ===================================*/
+
+   #skills, #projects {
+    background-color: rgba(7, 7, 7);
+ 
+   }
+
+        /*==================================
+            Section Headers
+   ===================================*/
+
+   .section-header {
+    background-color:  rgba(7, 7, 7);
+    color: #20da20;
+    font-weight: bold;   
+    border-radius: 5px;
+    font-size: 10px;
+    display: absolute;
+    min-width: 305px;
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+   }
+   .section-header pre {
+    color: #20da20;
+   }
+   #skills .section-header {
+       background-color: rgb(37, 36, 36);
+   }
+   #projects .section-header {
+    background-color: rgb(37, 36, 36);
+}
