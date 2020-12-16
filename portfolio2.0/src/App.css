@@ -92,7 +92,7 @@ pre {
 
    #about-me, #skills, #experience p {
        padding: 5%;
-       font-size: large;
+       /* font-size: large; */
        justify-content: center;
    }
 
@@ -177,10 +177,28 @@ i {
     color: #00FF00;
 }
 
+@media screen and (max-width: 400px) {
+    .nav{
+        font-size: 10px;
+    }
+    p {
+        font-size: 15px;
+    }
+    #describe {
+        font-size: 20px;
+    }
+}
+
 
 @media screen and (max-width: 600px) {
     .section-header{
         font-size: 5px;
+    }
+    #describe {
+        font-size: 20px;
+    }
+    #about-me, #skills, #experience {
+        height: 100vh;
     }
 }
 
