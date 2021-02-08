@@ -1,8 +1,7 @@
-import React from 'react'
-import Typical from 'react-typical'
+import React from "react";
 
 const Skills = () => {
-    const skills = String.raw`
+  const skills = String.raw`
   ============================================
      _____  __       __  __      __           
     /  ___\|  | __  |__||  |    |  |          
@@ -13,17 +12,19 @@ const Skills = () => {
   \_____/  |__| \__\|__||______||______||____/
   
   =============================================
-    `
-    return (
-        <section id='skills'>
-            <div className='section-header'>
-            <pre >
-                {skills}
-            </pre>
-            </div>
-            <p>HTML | CSS | Command Line | Javascript | jQuery | Express.js | SQL | MongoDB | Ruby on Rails | NodeJS | React | Git | Github | AJAX | Python | Django</p>
-        </section>
-    )
-}
+    `;
+  return (
+    <section id="skills">
+      <div className="section-header">
+        <pre>{skills}</pre>
+      </div>
+      <p>
+        HTML | CSS | Command Line | Javascript | jQuery | Express.js | SQL |
+        MongoDB | Ruby on Rails | NodeJS | React | Git | Github | AJAX | Python
+        | Django
+      </p>
+    </section>
+  );
+};
 
 export default Skills;
