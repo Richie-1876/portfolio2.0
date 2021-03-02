@@ -3,14 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #000;
+}
 
 /*==================================
             Header Section 
    ===================================*/
 
+canvas {
+  z-index: 9000;
+  position: absolute;
+  opacity: 0.2;
+}
+
 header {
   height: 100vh;
-  background-color: rgba(7, 7, 7);
+  background-color: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,6 +63,7 @@ header img {
 .nav {
   background-color: #070707;
   display: flex;
+  z-index: 10000;
   border-bottom: 2px solid #00ff00;
   justify-content: space-around;
 }
@@ -90,13 +100,13 @@ header img {
 #about-me,
 #skills {
   height: 50vh;
-  background-color: rgb(37, 36, 36);
+  background-color: #000;
   color: #00ff00;
 }
 
 #experience {
   height: 75vh;
-  background-color: rgb(37, 36, 36);
+  background-color: #000;
   color: #00ff00;
 }
 
@@ -114,7 +124,7 @@ header img {
 
 #skills,
 #projects {
-  background-color: rgba(7, 7, 7);
+  background-color: #000;
 }
 
 /*==================================
@@ -122,7 +132,7 @@ header img {
    ===================================*/
 
 .section-header {
-  background-color: rgba(7, 7, 7);
+  background-color: #000;
   color: #20da20;
   font-weight: bold;
   border-radius: 5px;
@@ -138,10 +148,10 @@ header img {
   color: #20da20;
 }
 #skills .section-header {
-  background-color: rgb(37, 36, 36);
+  background-color: #000;
 }
 #projects .section-header {
-  background-color: rgb(37, 36, 36);
+  background-color: #000;
 }
 
 #projects-container {
@@ -152,7 +162,8 @@ header img {
 }
 
 .project {
-  background-color: rgb(37, 36, 36);
+  background-color: #000;
+  z-index: 9001;
   color: #20da20;
   width: 300px;
   height: 500px;
@@ -161,6 +172,10 @@ header img {
   margin-bottom: 30px;
   box-shadow: 5px 5px 3px;
   border-radius: 10px;
+}
+.project:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
 }
 
 #projects-container img {
@@ -176,6 +191,7 @@ header img {
 
 #footer {
   height: 100px;
+  /* z-index: 9500; */
   background-color: rgb(37, 36, 36);
   text-align: center;
   display: flex;
@@ -184,6 +200,13 @@ header img {
 }
 i {
   color: #00ff00;
+}
+.social {
+  z-index: 9001;
+}
+.social:hover {
+  transition: all 0.2s ease-in-out;
+  transform: translate(0, -25px) scale(1.5);
 }
 
 @media screen and (max-width: 400px) {
@@ -215,5 +238,109 @@ i {
 @media screen and (max-width: 812px) {
   .section-header {
     font-size: 7px;
+  }
+}
+
+.fade-out {
+  animation: fadeOut ease 8s;
+  -webkit-animation: fadeOut ease 8s;
+  -moz-animation: fadeOut ease 8s;
+  -o-animation: fadeOut ease 8s;
+  -ms-animation: fadeOut ease 8s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 8s;
+  -moz-animation: fadeIn ease 8s;
+  -o-animation: fadeIn ease 8s;
+  -ms-animation: fadeIn ease 8s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
   }
 }

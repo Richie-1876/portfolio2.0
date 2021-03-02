@@ -6,10 +6,12 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience.js";
 import Projects from "./components/Projects.js";
 import Footer from "./components/Footer.js";
+import Canvas from "./components/Canvas.js";
 
 function App() {
   return (
     <div id="hue">
+      <Canvas />
       <NavBar />
       <Header />
       <AboutMe />
