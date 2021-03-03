@@ -1,5 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
+import Image from "../imgs/PixelImg.png";
 
 const Header = () => {
   var title = String.raw`
@@ -26,11 +27,7 @@ const Header = () => {
 
   return (
     <header className="fade-in">
-      <img
-        id="profile_pic"
-        src="https://i.imgur.com/pm1X1BP.png?1"
-        alt="Profile pic"
-      />
+      <img id="profile_pic" src={Image} alt="Profile pic" />
       <div className="name">
         <pre>{title}</pre>
       </div>
