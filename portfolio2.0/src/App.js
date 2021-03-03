@@ -1,4 +1,5 @@
 import "./App.css";
+
 import Header from "./components/Header.js";
 import NavBar from "./components/NavBar.js";
 import AboutMe from "./components/AboutMe.js";
@@ -10,7 +11,7 @@ import Canvas from "./components/Canvas.js";
 
 function App() {
   return (
-    <div id="hue">
+    <>
       <Canvas />
       <NavBar />
       <Header />
@@ -19,7 +20,7 @@ function App() {
       <Experience />
       <Projects />
       <Footer />
-    </div>
+    </>
   );
 }
 

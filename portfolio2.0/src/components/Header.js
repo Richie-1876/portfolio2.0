@@ -38,11 +38,11 @@ const Header = () => {
           wrapper="b"
           steps={[
             "Web Developer",
-            1000,
+            2000,
             "Designer",
-            1000,
+            2000,
             "Software Engineer.",
-            1000,
+            2000,
           ]}
         />
       </p>
